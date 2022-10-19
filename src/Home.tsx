@@ -1,9 +1,20 @@
-import React, { memo } from 'react'
+import React, { memo } from "react";
+import { useNavigate } from "react-router";
 
 const Home = memo((props) => {
+  const navigate = useNavigate();
   return (
-    <div>Home</div>
-  )
-})
+    <div>
+      Home
+      <button
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        22222222
+      </button>
+    </div>
+  );
+});
 
-export default Home
+export default Home;
